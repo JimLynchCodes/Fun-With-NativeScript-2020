@@ -19,6 +19,13 @@ To try on your phone easily:
 tns preview
 ```
 
+
+To run On Ios simulator:
+```
+tns run ios
+```
+
+
 # Scaffolding
 
 Proudly created with the Telerik NativeScript CLI:
