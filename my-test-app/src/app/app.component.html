@@ -21,6 +21,14 @@
             <Image src="font://&#xf013;" class="fas t-36"></Image>
         </TabStripItem>
     </TabStrip>
+    
+    <TabContentItem>
+        <page-router-outlet name="messagesTab"></page-router-outlet>
+    </TabContentItem>
+
+    <TabContentItem>
+        <page-router-outlet name="searchTab"></page-router-outlet>
+    </TabContentItem>
 
     <TabContentItem>
         <page-router-outlet name="homeTab"></page-router-outlet>
@@ -30,10 +38,4 @@
         <page-router-outlet name="browseTab"></page-router-outlet>
     </TabContentItem>
 
-    <TabContentItem>
-        <page-router-outlet name="searchTab"></page-router-outlet>
-    </TabContentItem>
-    <TabContentItem>
-        <page-router-outlet name="settingsTab"></page-router-outlet>
-    </TabContentItem>
 </BottomNavigation>

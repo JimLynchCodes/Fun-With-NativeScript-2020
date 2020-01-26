@@ -7,7 +7,8 @@ import { ItemDetailComponent } from "./item-detail/item-detail.component";
 
 const routes: Routes = [
     { path: "default", component: HomeComponent },
-    { path: "item/:id", component: ItemDetailComponent }
+    { path: "item/:id", component: ItemDetailComponent },
+    { path: "messages", component: ItemDetailComponent }
 ];
 
 @NgModule({

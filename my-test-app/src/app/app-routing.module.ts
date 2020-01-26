@@ -33,6 +33,12 @@ const routes: Routes = [
         component: NSEmptyOutletComponent,
         loadChildren: () => import("~/app/settings/settings.module").then((m) => m.SettingsModule),
         outlet: "settingsTab"
+    },
+    {
+        path: "messages",
+        component: NSEmptyOutletComponent,
+        loadChildren: () => import("~/app/messages/messages.module").then((m) => m.MessagesModule),
+        outlet: "messagesTab"
     }
 ];
 
