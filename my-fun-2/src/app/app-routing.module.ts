@@ -6,15 +6,15 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 const routes: Routes = [
     {
         path: "",
-        redirectTo: "/(homeTab:home/default//browseTab:browse/default//searchTab:search/default//settingsTab:settings/default)",
+        redirectTo: "/(messagesTab:messages/default//browseTab:browse/default//postListingTab:post-listing/default//settingsTab:settings/default)",
         pathMatch: "full"
     },
 
     {
-        path: "home",
+        path: "messages",
         component: NSEmptyOutletComponent,
-        loadChildren: () => import("~/app/home/home.module").then((m) => m.HomeModule),
-        outlet: "homeTab"
+        loadChildren: () => import("~/app/messages/messages.module").then((m) => m.MessagesModule),
+        outlet: "messagesTab"
     },
     {
         path: "browse",
@@ -23,10 +23,10 @@ const routes: Routes = [
         outlet: "browseTab"
     },
     {
-        path: "search",
+        path: "post-listing",
         component: NSEmptyOutletComponent,
-        loadChildren: () => import("~/app/search/search.module").then((m) => m.SearchModule),
-        outlet: "searchTab"
+        loadChildren: () => import("~/app/post-listing/post-listing.module").then((m) => m.PostListingModule),
+        outlet: "postListingTab"
     },
     {
         path: "settings",
