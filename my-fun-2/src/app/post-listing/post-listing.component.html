@@ -3,6 +3,18 @@
 </ActionBar>
 
 <GridLayout class="page__content">
-    <Label class="page__content-icon fas" text="&#xf002;"></Label>
-    <Label class="page__content-placeholder" text="<!-- PostListing page content goes here -->"></Label>
+    <!-- <Label class="page__content-icon fas" text="&#xf002;"></Label> -->
+    <!-- <Label class="page__content-placeholder" text="PostListing page content goes here"></Label> -->
+
+    <!-- <TextArea hint="Enter text" color="orangered" backgroundColor="lightyellow"></TextArea> -->
+    <!-- <TextField hint="Enter text" color="orangered" backgroundColor="lightyellow"></TextField> -->
+
+    <StackLayout id="stackLayoutId">
+        <Button text="button" tap="{{ onTap }}" backgroundColor="blue" color="white" borderRadius="5"></Button>
+        <!-- <!-- <TextInput>Hello</TextInput> --> -->
+        
+        <TextField hint="Enter text" color="orangered" backgroundColor="lightyellow" ReturnKeyType="send" keyboardType="email"></TextField>
+        <Label text="{{ 'Result: ' + tfResult}}" textWrap="true" ></Label>
+
+    </StackLayout>
 </GridLayout>
