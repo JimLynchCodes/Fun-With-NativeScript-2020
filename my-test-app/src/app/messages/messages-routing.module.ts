@@ -5,7 +5,7 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { MessagesComponent } from "./messages.component";
 
 const routes: Routes = [
-    { path: "messages", component: MessagesComponent }
+    { path: "default", component: MessagesComponent }
 ];
 
 @NgModule({
